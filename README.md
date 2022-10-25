@@ -21,7 +21,22 @@
 
 ### Clonar Repositorio
 
-`git clone `
+```
+git clone https://github.com/Juan611x/MailSearch-Back.git
+```
+
+```
+yarn install
+```
+
+---
+
+### Comandos para iniciar la Api
+
+```
+go run .\main.go
+```
+
 
 ---
 ### Consumir la Api
