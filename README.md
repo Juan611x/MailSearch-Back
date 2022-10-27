@@ -1,12 +1,45 @@
 # MailSearch-Back
 
+
+
+## Tabla de Contenido
+
+* Tecnologías usadas 
+* Clonar repositorio GitHub
+* Comandos para iniciar la Api
+* Consumir la Api
+* Funcionamiento
+
+---
+
 ### Tecnologías usadas en el proyecto
 * ZincSearch **base de datos**
 * GO **lenguaje de programacion**
   * chi router **API Router**
 
+---
+
+### Clonar Repositorio
+
+```
+git clone https://github.com/Juan611x/MailSearch-Back.git
+```
+
+```
+yarn install
+```
 
 ---
+
+### Comandos para iniciar la Api
+
+```
+go run .\main.go
+```
+
+
+---
+### Consumir la Api
 
 Esta parte del proyecto consta de dos funcionalidades principales. Indexar Información en la base de datos ya mencionada y recuperar información de la misma.
 
@@ -38,6 +71,8 @@ La Api se aloja en el puerto :5000, con la dirección  **/api/indexer/** y solo 
  ```
 
 ---
+
+## Funcionamiento
 
 Primero debemos ingresar información a la base de datos, aquí surge el primer problema ya que dicha información se encuentra descrita en archivos de texto que hacen parte de una cadena de directorios, que más bien se asemejan a un árbol donde partimos de un directorio con más directorios dentro hasta llegar a los archivos de texto con la información requerida.
 
