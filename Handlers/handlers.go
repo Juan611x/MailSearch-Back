@@ -59,12 +59,6 @@ func GetCorreos(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	hits := string(body)
-
-	hits = strings.Split(hits, ":[")[1]
-	hits = strings.Split(hits, "]}")[0]
-
-	fmt.Println(hits)
 	fmt.Fprintln(w, string(body))
 }
 
@@ -88,8 +82,6 @@ func abrirArchivos(phat string) {
 				Co := models.Transformar_Correo(Lineas)
 
 				st, _ := json.Marshal(Co)
-
-				// fmt.Println(string(st))
 
 				agregarEnBD(string(st))
 
